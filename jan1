@@ -1,0 +1,263 @@
+/*
+1)Check if a Number is Positive or Negative in Java
+In this article, we will create a java program to check whether the number entered by the user is positive or negative. The number is demonstrated as positive or negative by comparing the entered number with the Zero(0). If the number entered by the user is greater than zero, then the number is positive, else if the number is less than zero, then the number is negative and else the number is zero.
+
+N > 0 then, number is Positive.
+N < 0 then, number is Negative.
+N = 0 then, number is Zero.
+To solve the above problem we write a Java code using three different methods.
+
+Method 1: Using Brute Force
+Method 2: Using Nested if-else Statements
+Method 3: Using Ternary Operators
+The Above methods are discussed in depth in the sections below.
+*/
+/*import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+      int num = sc.nextInt();
+      if(num > 0){
+          System.out.println("Positive Number");
+            }if(num < 0 ){
+              System.out.println("Negitive Number");
+          }if(num == 0 ){
+              System.out.println("Zero");
+          }
+       
+    }
+}*/
+
+/*
+Check Whether a Number is Even or Odd in Java
+Given an integer input the objective is to write a Java code to Check Whether a Number is Even or Odd. To do so the main idea is to divide the number by 2 and check if it’s divisible or not. It’s an Even number is it’s perfectly divisible by 2 or an Odd number otherwise.
+
+Here are the Methods to solve the above mentioned problem,
+
+Method 1 : Using Brute Force
+Method 2 : Using Ternary Operator
+Method 3 : Using Bitwise Operators
+We’ll discuss the above mentioned methods in detail in the next section.*/
+
+/*public class Main{
+    public static void main(String[] args){
+        int num = 90;
+        
+        if(num % 2 == 0){
+            System.out.println("Even");
+        }else{
+            System.out.println("Odd");
+        }
+    }
+}*/
+
+/*
+Given an integer input of N, the objective is to find the sum of all the natural numbers until the given input integer. To do so we can use different approaches to write the Java code and some such methods are mentioned below,
+
+Method 1: Using for Loop
+Method 2: Using Formula for the Sum of Nth Term
+Method 3: Using Recursion
+We’ll discuss and learn more about each above-mentioned method in detail in the sections below.
+*/
+/*import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number");
+        int sum = 0;
+        int N = sc.nextInt();
+        for(int i = 1; i<= N; i++){
+            sum = sum + i;
+        }
+        System.out.println(sum);
+        
+        
+    }
+}*/
+
+/*
+Given the range as integer input, the objective is to find the Sum of all the Numbers that lay in the given interval using different methods. To do so we basically iterate from the base interval to the final interval and keep adding the number. Here are some of the methods to solve the above mentioned problem in Java Language.
+For the given integer input intervals number1 and number2
+
+Initialize the required variables.
+Initiate a for loop from range [5,10].
+Keep adding the value of the iter variable to sum variable.
+Print the sum variable.*/
+
+/*class Main{
+    public static void main(String[] args){
+        int start = 5;
+        int end = 10;
+        int sum = 0;
+        
+        for(int i =start; i<= end; i++){
+            sum = sum + i;
+        }
+        System.out.println(sum);
+    }
+}
+*/
+
+/*
+Find the Greatest of the Two Numbers in Java
+Given two integer input Number1 and Number2, the objective is to write a Java code to compare both the Numbers and Find the Greatest of the Two Numbers. To do so we’ll use if-else statements and print the output. Some methods to solve the above-mentioned Problem are given below.
+*/
+
+/*class Main{
+    public static void main(String[] args){
+        int num1 = 10;
+        int num2 = 20;
+        
+        if(num1 > num2){
+            System.out.println("Number 1 is greater");
+        }else{
+            System.out.println("Number 2 is greater");
+        }
+    }
+}
+*/
+
+/*
+Find the Greatest of the Three Numbers in Java
+Given Three integer inputs num1, num2 and num3, the objective is ti write a code to Find the Largest of the Three Numbers in Java Language. In this article we will see a  Java program to Find Greatest of three numbers. We will use if else conditions and ternary operator too to find the same. Here are some of the methods to solve the above mentioned problem,
+*/
+
+/*class Main {
+    public static void main(String[] args){
+        int num1 = 10;
+        int num2 = 20;
+        int num3 = 30;
+        
+        if(num1 > num2 && num1 > num3){
+            System.out.println("Number 1 is  greater");
+        }else if(num2 > num1 && num2 > num3){
+            System.out.println("Number 2 is greater");
+        }else if(num3 > num1 && num3 > num2){
+            System.out.println("Number 3 is greater");
+        }
+    }
+}
+*/
+/*
+Check Whether or Not the Year is a Leap Year in Java
+Given an integer input for the year, the objective is to check whether or not the user given input “year” is a Leap year or not. In order to do so we check if the integer input satisfies the conditions for a leap year mentioned below. Therefore, we write a Java code to check and tell if it’s a leap year or not. Some of the methods to check for leap year are mentioned below
+*/
+/*class Main {
+  public  static boolean isLeapYear(int year){
+        return(year % 4 == 0 && year % 100 != 0) || (year % 400 == 0); 
+    }
+    
+    public static void main(String[] args){
+        int year = 2020;
+        
+       if(isLeapYear(year)){
+           System.out.println(year + " : is a leap year");
+       }else{
+           System.out.println(year + " : is not a leap year");
+       }
+    }
+}
+*/
+
+/*
+Write a program to check if a given number is prime or not in java
+Given an integer input, the objective is to – Write a program to check if a given number is prime or not in Java. Here are some of the Methods to Check for Prime –
+*/
+
+/*class Main{
+    public static void main(String[] args){
+        
+        boolean prime = true;
+        
+        int number = 7;
+        
+        for(int i = 2; i<= Math.sqrt(number); i++){
+            if(number % i == 0){
+                prime = false;
+                break;
+            }
+        }
+       
+if (prime) {
+    System.out.println(number + " is a prime number.");
+} else {
+    System.out.println(number + " is not a prime number.");
+}
+
+    }
+}*/
+
+
+/*
+Find all the Prime Numbers in a Given Interval in Java
+Given two integer inputs for the range or the interval for the search. The objective is to search and find all the Prime Numbers that lay in the given interval or range. To do so we’ll iterate through the numbers and check whether or not they are prime simultaneously. We’ll use loops to check whether the number has any factors other than 1 and the number itself. Here are few methods we’ll use to Find all the Prime Number in a Given Interval in Java Language.
+*/
+class Main{
+    public static void main(String[] args){
+        int start = 2;
+        int end = 100;
+        for(int i = start; i<= end; i++){
+            if(isPrime(i)){
+                System.out.println(i);
+            }
+        }
+    }
+    
+    public static boolean isPrime(int num){
+       if(num <= 1){
+           return false;
+       }
+       for(int i = 2; i < Math.sqrt(num); i++){
+           if(num % i == 0){
+               return false;
+           }
+       }
+       return true;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
